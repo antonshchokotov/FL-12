@@ -46,7 +46,8 @@
 }
 .heading>div>ol>li>a:hover::before {
   display: inline-block;
-  content: ">";  
+  content: ">";
+  font-weight: bold;  
 }
 .heading a.text::after {
   display: inline-block;
@@ -175,6 +176,6 @@
     padding: 0;
   }
   .tm-banner-text {
-    animation: none;
+    position: static;
   }
 }
