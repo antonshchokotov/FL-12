@@ -152,6 +152,10 @@
     margin-right: 5%;
     margin-left: 5%;
   }
+  .heading {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
   .heading div h2 {
     font-weight: 300;
   }
