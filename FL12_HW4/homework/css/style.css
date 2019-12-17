@@ -99,8 +99,8 @@ main {
   margin-top: 10px;
 }
   .article {
-    min-width: 900px;
-    max-width: 940px;
+    width: 940px;
+    max-width: 90%;
     margin-top: 90px;
   }
     .article>img {
@@ -142,8 +142,8 @@ footer {
   padding-top: 75px;
 }
   .footerWrap {
-    min-width: 900px;
-    max-width: 940px;
+    width: 940px;
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
