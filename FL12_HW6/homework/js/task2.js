@@ -17,7 +17,7 @@ if (isNaN(a) || isNaN(b) || isNaN(c)) {
 
 //log error if triangle cannot be made up, else log triangle type
 if (isInputValid) {
-  if ( a>b+c || b>a+c || c>a+b) {
+  if ( a>=b+c || b>=a+c || c>=a+b) {
     console.log("Triangle doesn't exist");
   }else if (a===b && a===c){
     console.log('Equilateral triangle');
