@@ -18,7 +18,7 @@ if (isInputValid) {
   if (d>0){
     console.log(`x1 = ${Math.round((-b+Math.sqrt(d))/2*a)} and x2 = ${Math.round((-b-Math.sqrt(d))/2*a)}`);
   }else if (d===0){
-    console.log(`x = ${Math.round(-1*b/2*a)}`);
+    console.log(`x = ${Math.round(-b/2*a)}`);
   } else {
     console.log('no solution');
   }
