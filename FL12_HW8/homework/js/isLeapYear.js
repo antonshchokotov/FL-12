@@ -4,7 +4,7 @@ function isLeapYear(date) {
     return new Date(year, 1, 29).getDate() === 29 ?
     `${year} is a leap year` : `${year} is not a leap year`;
   } else {
-    return 'Invalid Date'
+    return 'Invalid Date';
   }
 }
 
