@@ -31,12 +31,9 @@ function flipOver(string) {
   return result;
 }
 
-function makeListFromRange([current, end]) {
-  const result = [];
-  while (current <= end) {
-    result.push(current++);
-  }
-  return result;
+function makeListFromRange([start, end], result = []) {
+  result.push(start);
+  return start < end ? makeListFromRange([++start, end], result) : result;
 }
 
 function getArrayOfKeys(array, key) {
