@@ -6,10 +6,15 @@
 
 i {
   float: left;
-  padding-right: 5px; 
+  padding-right: 5px;
+  pointer-events: none;
 }
 
 .highlight:hover {
   background-color: #c7b884;
   cursor: pointer;
+}
+
+.closed > .node {
+  display: none;
 }

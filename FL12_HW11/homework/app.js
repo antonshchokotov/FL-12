@@ -37,16 +37,16 @@ const structure = [
 
 const rootNode = document.getElementById('root');
 
-function createTree(rootNode, structureArray, disp = '') {
+function createTree(rootNode, structureArray) {
   for (let element of structureArray) {
     let currentNode = createNode(element);
+    currentNode.classList.add('closed');
     rootNode.append(currentNode);
     if (element.children) {
-      createTree(currentNode, element.children, 'none');
+      createTree(currentNode, element.children);
     } else if (element.folder) {
       currentNode.append(createNode());
     }
-    currentNode.style.display = disp;
   }
 }
 
@@ -56,26 +56,20 @@ function createNode(obj = null) {
   element.textContent = obj ? obj.title : 'Folder is empty';
   element.classList.add('highlight');
   node.classList.add('node');
-  node.addEventListener('click', showHideChildren);
+  node.addEventListener('click', folderOpenClose);
   node.append(element);
   if (obj) {
     let icon = document.createElement('i');
     icon.classList.add('material-icons');
     icon.textContent = obj.folder ? 'folder' : 'play_circle_outline';
     node.prepend(icon);
-  } else {
-    node.style.display = 'none';
   }
   return node;
 }
 
-function showHideChildren(e) {
+function folderOpenClose(e) {
   e.stopPropagation();
-  for (let child of e.currentTarget.children) {
-    if(child.classList.contains('node')) {
-      child.style.display = child.style.display === 'none' ? '' : 'none';
-    }
-  }
+  e.currentTarget.classList.toggle('closed');
   let icon = e.currentTarget.firstChild;
   if (icon.textContent === 'folder') {
     icon.textContent = 'folder_open';
