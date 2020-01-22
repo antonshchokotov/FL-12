@@ -78,9 +78,9 @@ function showHideChildren(e) {
   }
   let icon = e.currentTarget.firstChild;
   if (icon.textContent === 'folder') {
-    icon.textContent = 'folder_open'
+    icon.textContent = 'folder_open';
   } else if (icon.textContent === 'folder_open') {
-    icon.textContent = 'folder'
+    icon.textContent = 'folder';
   }
 }
 
