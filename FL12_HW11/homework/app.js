@@ -54,7 +54,6 @@ function createNode(obj = null) {
   let node = document.createElement('div');
   let element = document.createElement('div');
   element.textContent = obj ? obj.title : 'Folder is empty';
-  element.classList.add('highlight');
   node.classList.add('node');
   node.addEventListener('click', folderOpenClose);
   node.append(element);
@@ -62,6 +61,7 @@ function createNode(obj = null) {
     let icon = document.createElement('i');
     icon.classList.add('material-icons');
     icon.textContent = obj.folder ? 'folder' : 'play_circle_outline';
+    element.classList.add('highlight');
     node.prepend(icon);
   }
   return node;
