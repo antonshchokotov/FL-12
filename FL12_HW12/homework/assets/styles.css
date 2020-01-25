@@ -1,0 +1,30 @@
+#buttonAddNew {
+  float: right
+}
+
+.set {
+  border: 2px solid rgba(71, 80, 85, 0.5);
+  padding: 5px;
+  margin: 5px;
+  max-width: 400px;
+}
+
+.set > div {
+  width: 50%;
+  display: inline-block;
+  border-bottom: 2px solid rgba(52, 214, 174, 0.7);
+  margin-bottom: 4px;
+}
+
+#setsCompletedContainer {
+  margin: 5px;
+  margin-top: 15px;
+  padding: 5px;
+  max-width: 400px;
+  color: rgba(52, 214, 174);
+  border: 2px solid rgba(52, 214, 174, 0.7);
+}
+
+#setsCompletedContainer * {
+  color: black;
+}
