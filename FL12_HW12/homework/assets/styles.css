@@ -1,30 +1,35 @@
-#buttonAddNew {
-  float: right
+#root {
+  max-width: 500px;
 }
 
 .set {
-  border: 2px solid rgba(71, 80, 85, 0.5);
-  padding: 5px;
-  margin: 5px;
-  max-width: 400px;
+  margin: 15px;
+  border: 1px solid black;
+  color: blue;
 }
 
-.set > div {
-  width: 50%;
+.set > button {
+  float: right;
+}
+
+.set > button:first-of-type {
+  margin-right: 10px;
+  float: none;
+}
+
+.setCompleted > .set {
+  background-color: lime;
+  opacity: 0.3;
+}
+
+.termContainer {
+  border: 1px solid teal;
+  margin: 4px;
+}
+
+.termContent {
   display: inline-block;
-  border-bottom: 2px solid rgba(52, 214, 174, 0.7);
-  margin-bottom: 4px;
-}
-
-#setsCompletedContainer {
-  margin: 5px;
-  margin-top: 15px;
-  padding: 5px;
-  max-width: 400px;
-  color: rgba(52, 214, 174);
-  border: 2px solid rgba(52, 214, 174, 0.7);
-}
-
-#setsCompletedContainer * {
   color: black;
+  width: 30%;
+  margin: 2px;
 }
