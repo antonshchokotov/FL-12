@@ -1,0 +1,60 @@
+@import "variables.less";
+
+.nav-link {
+  font-weight: bold;
+  &.active {
+    color: white !important;
+    background-color: @blue;
+  }
+}
+
+.navbar {
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.5);
+}
+
+.main-content {
+  &__yoga, &__other {
+    margin-top: 70px;
+    color: @blue;
+    hr {
+      border: 0.5px solid @blue;
+    }
+  }
+}
+
+.yoga__description {
+  p, ul {
+    color: black;
+  }
+}
+
+.other__elem {
+  border: 1px solid transparent;
+  p {
+    margin: 0;
+    line-height: 2.5em;
+    color: white;
+    font-weight: bold;
+  }
+  &--cardio {
+    background-color: @red;
+  }
+  &--fitness {
+    background-color: @blue;
+  }
+  &--zumba {
+    background-color: @orange;
+  }
+  &--bootcamp {
+    background-color: @green;
+  }
+}
+
+.footer {
+  background-color: @grey;
+  &__p {
+    line-height: 3em;
+    color: white;
+    font-weight: bold;
+  }
+}
