@@ -1,0 +1,43 @@
+#users {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.user, .post {
+  margin: 5px;
+  border: 1px solid red;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.propContainer {
+  display: flex;
+}
+
+.name {
+  background-color: rgba(100, 148, 237, 0.1);
+  cursor: pointer;
+}
+
+
+.propName {
+  margin-right: 5px
+}
+
+button {
+  cursor: pointer;
+}
+
+#spinner {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./spinner.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(95, 158, 160, 0.4);
+  display: none;
+}
