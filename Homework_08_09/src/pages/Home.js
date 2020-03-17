@@ -7,8 +7,10 @@ import AddCourse from '../components/AddCourse';
 function Home() {
   return (
     <div className='home'>
-      <SearchConnected />
-      <AddCourse />
+      <div className='topBar'>
+        <SearchConnected />
+        <AddCourse />
+      </div>
       <CoursesListConnected />
     </div>
   )

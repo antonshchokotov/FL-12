@@ -11,7 +11,7 @@ class Course extends React.Component {
     return (
       <div className='course'>
         <div>{date}</div>
-        <div>{name}</div>
+        <div className='name'>{name}</div>
         <div>{description}</div>
         <div>{duration}</div>
         <div>

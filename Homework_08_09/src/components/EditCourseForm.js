@@ -63,10 +63,10 @@ class EditCourseForm extends React.Component {
           </input> <br/>
 
         <Link to='/'>
-          <button onClick={e => this.editCourse(e)}>Save</button>
+          <button className='bigButton' onClick={e => this.editCourse(e)}>Save</button>
         </Link>
         <Link to='/'>
-          <button>Cancel</button>
+          <button className='cancel'>Cancel</button>
         </Link>
       </form>
     )
