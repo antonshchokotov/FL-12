@@ -1,0 +1,66 @@
+.pool {
+  background-color: rgba(172, 255, 47, 0.4);
+  border: 1px solid black;
+  border-radius: .5em;
+}
+
+.employee {
+  background-color: honeydew;
+  border: 1px solid grey;
+  border-radius: .5em;
+}
+
+.rm {
+  background-color: rgb(223, 238, 223);
+  border: 1px solid grey;
+  border-radius: .5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rm:hover {
+  background-color: honeydew;
+
+}
+
+div {
+  padding: 5px 20px;
+  margin: 5px;
+}
+
+#root {
+  margin: 20px 0;
+  padding: 0;
+}
+
+body {
+  max-width: 70%;
+  margin: 20px auto;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 2em;
+  border: .1em solid rgba(0, 0, 0, 0.300);
+  height: 2rem;
+  margin-left: 5px;
+  padding: 5px 20px;
+}
+
+button:hover {
+  border: .1em solid greenyellow;
+  background-color: honeydew;
+}
+
+button:focus {
+  outline: none;
+}
+
+.button--active {
+  border: .1em solid greenyellow;
+  background-color: honeydew;
+}
+
+.hidden {
+  display: none;
+}
