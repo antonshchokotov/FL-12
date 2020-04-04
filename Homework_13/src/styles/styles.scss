@@ -1,0 +1,131 @@
+* {
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.cell {
+  margin: 0;
+  width: 30%;
+  height: 30%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cell:nth-child(1),
+.cell:nth-child(2),
+.cell:nth-child(3) {
+  border-top: 0;
+}
+
+.cell:nth-child(3n+3) {
+  border-right: 0;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: 0;
+}
+
+.cell:nth-child(3n+1) {
+  border-left: 0;
+}
+
+.cell.x, .cell.o {
+  cursor: default;
+}
+
+.cell.x::before,
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after {
+  content: '';
+  position: absolute;
+  width: 8%;
+  height: 80%;
+  background-color: black;
+}
+
+.cell.x::before,
+.board.x .cell:not(.x):not(.o):hover::before {
+  transform: rotate(45deg);
+}
+
+.cell.x::after,
+.board.x .cell:not(.x):not(.o):hover::after {
+  transform: rotate(-45deg);
+}
+
+.cell.o::before,
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::before,
+.board.o .cell:not(.x):not(.o):hover::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cell.o::before,
+.board.o .cell:not(.x):not(.o):hover::before {
+  width: 70%;
+  height: 70%; 
+  background-color: black;
+}
+
+.cell.o::after,
+.board.o .cell:not(.x):not(.o):hover::after {
+  height: 55%;
+  width: 55%;
+  background-color: white;
+}
+
+.board.x .cell:not(.x):not(.o):hover::before,
+.board.x .cell:not(.x):not(.o):hover::after,
+.board.o .cell:not(.x):not(.o):hover::before {
+  background-color: rgb(201, 189, 211);
+}
+
+
+.current-player {
+  background-color: mediumspringgreen;
+}
+
+.cell.o.win::before,
+.cell.x.win::after,
+.cell.x.win::before {
+  background-color: mediumspringgreen;
+}
+
+#progress {
+  width: 300px;
+}
+
+#names {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#names > div {
+  display: flex;
+}
+
+#message {
+  font-size: 2rem;
+  margin: 5px;
+  text-align: center;
+}
